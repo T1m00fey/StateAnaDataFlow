@@ -12,7 +12,7 @@ struct LoginView: View {
     @EnvironmentObject private var user: UserSettings
     private let storageManager = StorageManager.shared
     
-    var color: Color {
+    private var color: Color {
         name.count < 3 ? .red : .green
     }
     
